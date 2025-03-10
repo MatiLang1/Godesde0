@@ -7,6 +7,14 @@ import (
 )
 
 func main() {
-	fmt.Println("Asi")
-	variables.MuestroEnteros()
+	variables.MuestroEnteros() //se ejecuta la funcion "Muestoenteros que está en la carpeta "variables"
+
+	variables.RestoVariables() //se ejecuta funcion del package "variables"
+
+	estado, texto := variables.ConviertoaTexto(1588)
+	fmt.Println(estado)
+	fmt.Println(texto)
+
 }
+
+//se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
