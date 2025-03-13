@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/ejercicios"
+	"github.com/MatiLang1/Godesde0/files"
 )
 
 func main() {
@@ -21,8 +21,14 @@ func main() {
 
 	// iteraciones.Iterar()
 
-	ejercicios.TabladeMultiplicar()
+	// fmt.Println(ejercicios.TabladeMultiplicar())
 
+	// files.GrabaTabla()
+	//guarda/graba la tabla de multiplicar dentro del archivo tabla.txt (esa tabla fue almacenada en la variable "texto" y luego escrita en archivo)
+
+	// files.SumaTabla() //concatena tablas en el archivo "tabla.txt"
+
+	files.LeoArchivo()
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
