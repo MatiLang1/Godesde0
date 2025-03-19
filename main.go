@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/mapas"
+	"github.com/MatiLang1/Godesde0/users"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 
 	// arreglos_slices.Capacidad()
 
-	mapas.MostrarMapas()
+	users.AltaUsuario()
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
