@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/files"
+	"github.com/MatiLang1/Godesde0/mapas"
 )
 
 func main() {
@@ -28,7 +28,15 @@ func main() {
 
 	// files.SumaTabla() //concatena tablas en el archivo "tabla.txt"
 
-	files.LeoArchivo()
+	// files.LeoArchivo()
+
+	// funciones.LlamarClosure()
+
+	// funciones.Exponencial(2)
+
+	// arreglos_slices.Capacidad()
+
+	mapas.MostrarMapas()
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
