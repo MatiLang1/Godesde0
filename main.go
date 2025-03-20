@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/MatiLang1/Godesde0/goroutines"
+	"github.com/MatiLang1/Godesde0/webserver"
 )
 
 func main() {
@@ -53,12 +51,12 @@ func main() {
 	// var x string
 	// fmt.Scanln(&x) //al mandar el valor que me pide por teclado se corta la ejecución
 
-	canal1 := make(chan bool) //creamos un chan (canal), luego el tipo (bool en este caso)
-	go goroutines.MiNombreLentoo("Matías Lang", canal1)
+	// canal1 := make(chan bool) //creamos un chan (canal), luego el tipo (bool en este caso)
+	// go goroutines.MiNombreLentoo("Matías Lang", canal1)
+	// fmt.Println("Estoy")
+	// <-canal1 //ahora canal1 es el que envía info (es un await espera a que el canal1 termine la ejecucion, en este caso canal1 no se asigna a ninguna variable)
 
-	fmt.Println("Estoy")
-
-	<-canal1 //ahora canal1 es el que envía info (es un await espera a que el canal1 termine la ejecucion, en este caso canal1 no se asigna a ninguna variable)
+	webserver.MiWebServer()
 
 }
 
