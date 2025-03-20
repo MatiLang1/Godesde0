@@ -1,8 +1,7 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/ejer_interfaces"
-	"github.com/MatiLang1/Godesde0/modelos"
+	"github.com/MatiLang1/Godesde0/defer_panic"
 )
 
 func main() {
@@ -39,11 +38,13 @@ func main() {
 
 	// users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	ejer_interfaces.HumanosRespirando(Pedro)
+	// Pedro := new(modelos.Hombre)
+	// ejer_interfaces.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	ejer_interfaces.HumanosRespirando(Maria)
+	// Maria := new(modelos.Mujer)
+	// ejer_interfaces.HumanosRespirando(Maria)
+
+	defer_panic.EjemploPanic()
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
