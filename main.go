@@ -1,7 +1,9 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/defer_panic"
+	"fmt"
+
+	"github.com/MatiLang1/Godesde0/goroutines"
 )
 
 func main() {
@@ -44,7 +46,11 @@ func main() {
 	// Maria := new(modelos.Mujer)
 	// ejer_interfaces.HumanosRespirando(Maria)
 
-	defer_panic.EjemploPanic()
+	// defer_panic.EjemploPanic()
+
+	goroutines.MiNombreLentoo("Matías Lang")
+
+	fmt.Println("Estoy")
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
