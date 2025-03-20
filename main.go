@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/users"
+	"github.com/MatiLang1/Godesde0/ejer_interfaces"
+	"github.com/MatiLang1/Godesde0/modelos"
 )
 
 func main() {
@@ -36,7 +37,13 @@ func main() {
 
 	// arreglos_slices.Capacidad()
 
-	users.AltaUsuario()
+	// users.AltaUsuario()
+
+	Pedro := new(modelos.Hombre)
+	ejer_interfaces.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	ejer_interfaces.HumanosRespirando(Maria)
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
