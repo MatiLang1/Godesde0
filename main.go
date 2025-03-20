@@ -48,9 +48,18 @@ func main() {
 
 	// defer_panic.EjemploPanic()
 
-	goroutines.MiNombreLentoo("Matías Lang")
+	// go goroutines.MiNombreLentoo("Matías Lang")
+	// fmt.Println("Estoy")
+	// var x string
+	// fmt.Scanln(&x) //al mandar el valor que me pide por teclado se corta la ejecución
+
+	canal1 := make(chan bool) //creamos un chan (canal), luego el tipo (bool en este caso)
+	go goroutines.MiNombreLentoo("Matías Lang", canal1)
 
 	fmt.Println("Estoy")
+
+	<-canal1 //ahora canal1 es el que envía info (es un await espera a que el canal1 termine la ejecucion, en este caso canal1 no se asigna a ninguna variable)
+
 }
 
 //se importa la carpeta del package que contiene el codigo requerido (funciones, propiedades , etc)
