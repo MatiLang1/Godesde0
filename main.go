@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/MatiLang1/Godesde0/webserver"
+	"github.com/MatiLang1/Godesde0/middleware"
 )
 
 func main() {
@@ -56,7 +56,9 @@ func main() {
 	// fmt.Println("Estoy")
 	// <-canal1 //ahora canal1 es el que envía info (es un await espera a que el canal1 termine la ejecucion, en este caso canal1 no se asigna a ninguna variable)
 
-	webserver.MiWebServer()
+	// webserver.MiWebServer()
+
+	middleware.MiMiddleware()
 
 }
 
